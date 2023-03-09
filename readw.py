@@ -27,7 +27,7 @@ values = result.get('values', [])
 
 aa=[[123,456],[5678,87665],['gbf','fgbf']]
 
-rangeup=str(input(" Enter the range for update : "))
+rangeup="Sheet1!"+str(input(" Enter the range for update : "))
 request = sheet.values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID, 
                                 range=rangeup, 
                                 valueInputOption="USER_ENTERED", 
